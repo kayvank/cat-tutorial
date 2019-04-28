@@ -20,6 +20,7 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 libraryDependencies ++= Seq(
   "org.scalaz" %% "scalaz-core" % "7+",
   "org.typelevel" %% "cats-core" % "1.6.0",
+  "org.typelevel" %% "cats-free" % "1.6.0",
   "org.typelevel" %% "cats-effect" % "1.2.0",
   "org.specs2" %% "specs2-core" % "4.2.0" % "test",
    "org.specs2" %% "specs2-scalacheck" % "4.5.1"  % "test",

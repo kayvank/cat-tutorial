@@ -4,9 +4,9 @@ import cats.free.FreeApplicative
 import cats.free.FreeApplicative.lift
 
 object ApplicativcesImpl {
-  type Validation[A] = FreeApplicative[ValidationOp, A]
+  type Validation[A] = FreeApplicative[ValidationOps, A]
 
   def size(size: Int):Validation[Boolean] = lift(Size(size))
-  val hasNumber: validation[Boolean] = lift(HasNumber)
+  val hasNumber: Validation[Boolean] = lift(HasNumber)
 }
 
